@@ -1,0 +1,17 @@
+@page
+@model CheckPrimeModel
+@{
+    ViewData["Title"] = "Prime Check";
+}
+
+<h2>Prime Checker</h2>
+
+<form method="post">
+    <input type="number" name="Number" />
+    <input type="submit" value="Check" />
+</form>
+
+@if (Model.ResultMessage != null)
+{
+    <p>@Model.ResultMessage</p>
+}
